@@ -2,11 +2,11 @@
 import PackageDescription
 
 let package = Package(
-    name: "KokateamQuickActions",
+    name: "CapacitorQuickActions",
     platforms: [.iOS(.v13)],
     products: [
         .library(
-            name: "KokateamQuickActions",
+            name: "CapacitorQuickActions",
             targets: ["QuickActionsPlugin"])
     ],
     dependencies: [
@@ -19,10 +19,6 @@ let package = Package(
                 .product(name: "Capacitor", package: "capacitor-swift-pm"),
                 .product(name: "Cordova", package: "capacitor-swift-pm")
             ],
-            path: "ios/Sources/QuickActionsPlugin"),
-        .testTarget(
-            name: "QuickActionsPluginTests",
-            dependencies: ["QuickActionsPlugin"],
-            path: "ios/Tests/QuickActionsPluginTests")
+            path: "ios/Sources/QuickActionsPlugin")
     ]
 )

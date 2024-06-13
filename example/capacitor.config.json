@@ -1,5 +1,5 @@
 {
-  "appId": "com.example.plugin",
+  "appId": "com.kokateam.plugins.quickactions",
   "appName": "example",
   "webDir": "dist",
   "plugins": {

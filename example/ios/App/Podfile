@@ -13,7 +13,7 @@ def capacitor_pods
   pod 'CapacitorCordova', :path => '../../node_modules/@capacitor/ios'
   pod 'CapacitorCamera', :path => '../../node_modules/@capacitor/camera'
   pod 'CapacitorSplashScreen', :path => '../../node_modules/@capacitor/splash-screen'
-  pod 'KokateamQuickActions', :path => '../../..'
+  pod 'CapacitorQuickActions', :path => '../../node_modules/capacitor-quick-actions'
 end
 
 target 'App' do

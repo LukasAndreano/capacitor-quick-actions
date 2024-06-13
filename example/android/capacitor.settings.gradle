@@ -8,5 +8,5 @@ project(':capacitor-camera').projectDir = new File('../node_modules/@capacitor/c
 include ':capacitor-splash-screen'
 project(':capacitor-splash-screen').projectDir = new File('../node_modules/@capacitor/splash-screen/android')
 
-include ':kokateam-quick-actions'
-project(':kokateam-quick-actions').projectDir = new File('../../android')
+include ':capacitor-quick-actions'
+project(':capacitor-quick-actions').projectDir = new File('../node_modules/capacitor-quick-actions/android')

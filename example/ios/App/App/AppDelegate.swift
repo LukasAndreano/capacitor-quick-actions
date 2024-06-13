@@ -1,4 +1,5 @@
 import UIKit
+import CapacitorQuickActions
 import Capacitor
 
 @UIApplicationMain
@@ -46,4 +47,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return ApplicationDelegateProxy.shared.application(application, continue: userActivity, restorationHandler: restorationHandler)
     }
 
+    func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+        let handled = QuickActions.handleQuickAction(shortcutItem)
+        completionHandler(handled)
+    }
 }

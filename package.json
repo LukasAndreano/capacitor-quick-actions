@@ -1,7 +1,7 @@
 {
-  "name": "kokateam-quick-actions",
-  "version": "0.0.1",
-  "description": "Quick Actions API for Capacitor App",
+  "name": "capacitor-quick-actions",
+  "version": "1.0.0",
+  "description": "Quick Actions API for Capacitor Apps",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -13,20 +13,23 @@
     "ios/Sources",
     "ios/Tests",
     "Package.swift",
-    "KokateamQuickActions.podspec"
+    "CapacitorQuickActions.podspec"
   ],
   "author": "Nikita Balin",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lukasandreano/kokateam-quick-actions.git"
+    "url": "git+https://github.com/lukasandreano/capacitor-quick-actions.git"
   },
   "bugs": {
-    "url": "https://github.com/lukasandreano/kokateam-quick-actions/issues"
+    "url": "https://github.com/lukasandreano/capacitor-quick-actions/issues"
   },
   "keywords": [
     "capacitor",
     "plugin",
+    "quick-actions",
+    "quick actions",
+    "actions",
     "native"
   ],
   "scripts": {
