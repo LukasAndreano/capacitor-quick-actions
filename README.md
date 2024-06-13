@@ -31,6 +31,9 @@ QuickActions.addListener('quickActionSelected', (data) => {
 });
 ```
 
+## Icons
+To use icons in your quick actions provide the name of the icon from [this app](https://developer.apple.com/sf-symbols/).
+
 ## API
 
 <docgen-index>
