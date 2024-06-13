@@ -1,6 +1,6 @@
 {
   "name": "capacitor-quick-actions",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Quick Actions API for Capacitor Apps",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -75,9 +75,6 @@
   "capacitor": {
     "ios": {
       "src": "ios"
-    },
-    "android": {
-      "src": "android"
     }
   }
 }

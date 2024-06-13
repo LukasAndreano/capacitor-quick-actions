@@ -1,12 +1,34 @@
-# kokateam-quick-actions
+# Capacitor Quick Actions
 
-Quick Actions API for Capacitor App
+Plugin for using [Quick Actions](https://developer.apple.com/documentation/uikit/menus_and_shortcuts/add_home_screen_quick_actions#3701696) in your Capacitor Apps.  
+Now it supports only on iOS/iPadOS 13+.
 
 ## Install
 
 ```bash
-npm install kokateam-quick-actions
+npm install capacitor-quick-actions
 npx cap sync
+```
+
+## Usage
+```typescript
+// Import the plugin
+import { QuickActions } from 'capacitor-quick-actions';
+
+// Add buttons to the home screen
+const addButtonsToHomeScreen = async () => {
+    await QuickActions.addQuickActions({
+        actions: [
+            { id: "button1", title: 'Action1', iconName: '1', description: 'Description1' },
+            { id: "button2", title: 'Action2', iconName: '2' } // Description is optional
+        ]
+    });
+}
+
+// Add Listener for the selected action
+QuickActions.addListener('quickActionSelected', (data) => {
+    console.log('Quick Action selected:', data.type); // returns id of the selected action
+});
 ```
 
 ## API
