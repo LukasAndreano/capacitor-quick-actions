@@ -13,9 +13,16 @@ import UIKit
             let id = action["id"] ?? UUID().uuidString
             
             var icon: UIApplicationShortcutIcon?
-            if let systemIconType = UIApplicationShortcutIcon.IconType(rawValue: Int(iconName) ?? -1) {
-                icon = UIApplicationShortcutIcon(type: systemIconType)
+            
+            // Использование SF Symbols для системных иконок
+            if #available(iOS 13.0, *) {
+                if let systemIcon = UIImage(systemName: iconName) {
+                    icon = UIApplicationShortcutIcon(systemImageName: iconName)
+                } else {
+                    icon = UIApplicationShortcutIcon(templateImageName: iconName)
+                }
             } else {
+                // Использование пользовательской иконки для версий iOS ниже 13.0
                 icon = UIApplicationShortcutIcon(templateImageName: iconName)
             }
             

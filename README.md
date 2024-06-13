@@ -31,10 +31,15 @@ import { QuickActions } from 'capacitor-quick-actions';
 const addButtonsToHomeScreen = async () => {
     await QuickActions.addQuickActions({
         actions: [
-            { id: "button1", title: 'Action1', iconName: '1', description: 'Description1' },
+            { id: "button1", title: 'Action1', iconName: 'house', description: 'Description1' },
             { id: "button2", title: 'Action2', iconName: '2' } // Description is optional
         ]
     });
+}
+
+// Remove buttons from the home screen
+const clearButtonsFromHomeScreen = async () => {
+    await QuickActions.clearQuickActions();
 }
 
 // Add Listener for the selected action
