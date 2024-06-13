@@ -10,6 +10,18 @@ npm install capacitor-quick-actions
 npx cap sync
 ```
 
+## Preparation
+Modify your `AppDelegate.swift`:
+1. Add `import CapacitorQuickActions` to the top of the file.
+2. Add `application function` to the bottom of the file:
+```swift
+func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+        let handled = QuickActions.handleQuickAction(shortcutItem)
+        completionHandler(handled)
+}
+```
+Example of the `AppDelegate.swift` file available [here](https://github.com/lukasandreano/capacitor-quick-actions/blob/main/docs/AppDelegate.swift). 
+
 ## Usage
 ```typescript
 // Import the plugin
