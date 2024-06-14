@@ -3,7 +3,7 @@
 Plugin for using [Quick Actions](https://developer.apple.com/documentation/uikit/menus_and_shortcuts/add_home_screen_quick_actions#3701696) in your Capacitor Apps.  
 Now it supports only on iOS/iPadOS 13+.
 
-![](https://github.com/lukasandreano/capacitor-quick-actions/blob/main/docs/preview.png?raw=true)
+![](https://github.com/lukasandreano/capacitor-quick-actions/blob/main/docs/preview-cutted.png?raw=true)
 
 ## Install
 
